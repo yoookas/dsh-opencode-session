@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "OpenCode session header",
+    "description": "Adds the x-opencode-session header to model requests bound for the OpenCode gateway: stable within a session, distinct across sessions, unchanged after restarts. Configure matching hosts, value format and override in Settings → OpenCode session header; changes apply immediately. Turning the plugin off stops the header.",
+    "detail": "docs/DETAIL.md"
+  }
+}

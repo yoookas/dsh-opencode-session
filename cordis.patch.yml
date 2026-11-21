@@ -1,0 +1,23 @@
+# dsh-opencode-session bundle patch.
+#
+# One Host row over the web profile. The package is resolved from the profile's
+# node_modules, where `dsh plugin --profile <name> add <path>` (or Plugin Manager)
+# linked it.
+#
+# Config defaults are written here so the shipped behavior is visible in
+# `dsh --profile <name> --dump-config`; override any key from your own
+# cordis.patch.yml layer with an id-targeted entry:
+#
+#   - id: x-opencode-session
+#     config:
+#       hosts: ["opencode.ai", "gw.example.com"]
+- insert:
+    - id: x-opencode-session
+      name: dsh-opencode-session
+      config:
+        hosts:
+          - opencode.ai
+        header: x-opencode-session
+        value: session-id
+        override: false
+        debug: false

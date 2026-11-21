@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "OpenCode 会话请求头",
+    "description": "为发往 OpenCode 网关的模型请求附加 x-opencode-session 请求头：同一会话取值固定、不同会话不同、重启续聊不变。在「设置 → OpenCode 会话头」里调整生效主机、取值方式与覆盖策略，保存即时生效；关闭插件后不再附加该请求头。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

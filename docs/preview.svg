@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-label="A session's model request carries the x-opencode-session header to the OpenCode gateway">
+  <g fill="none">
+    <rect x="56" y="52" width="210" height="196" rx="18" fill="#6366F1" fill-opacity="0.10" stroke="#818CF8" stroke-opacity="0.55" stroke-width="2"/>
+    <rect x="76" y="72" width="92" height="12" rx="6" fill="#818CF8" fill-opacity="0.75"/>
+    <rect x="76" y="100" width="170" height="12" rx="6" fill="#94A3B8" fill-opacity="0.42"/>
+    <rect x="76" y="124" width="140" height="12" rx="6" fill="#94A3B8" fill-opacity="0.42"/>
+    <rect x="76" y="148" width="160" height="12" rx="6" fill="#94A3B8" fill-opacity="0.42"/>
+    <rect x="76" y="176" width="44" height="20" rx="10" fill="#22C55E" fill-opacity="0.85"/>
+    <circle cx="110" cy="186" r="7" fill="#FFFFFF"/>
+    <rect x="132" y="176" width="44" height="20" rx="10" fill="#94A3B8" fill-opacity="0.35"/>
+    <circle cx="142" cy="186" r="7" fill="#FFFFFF"/>
+    <rect x="76" y="206" width="170" height="24" rx="8" stroke="#818CF8" stroke-opacity="0.6" stroke-width="2"/>
+
+    <path d="M286 150 H352" stroke="#6366F1" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M344 142 L354 150 L344 158" stroke="#6366F1" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="372" y="112" width="124" height="80" rx="12" fill="#0EA5E9" fill-opacity="0.10" stroke="#38BDF8" stroke-opacity="0.8" stroke-width="2"/>
+    <path d="M376 118 L434 158 L492 118" stroke="#38BDF8" stroke-opacity="0.65" stroke-width="2" stroke-linejoin="round"/>
+
+    <path d="M434 96 V104" stroke="#F59E0B" stroke-opacity="0.9" stroke-width="3" stroke-linecap="round"/>
+    <rect x="394" y="72" width="80" height="24" rx="12" fill="#F59E0B" fill-opacity="0.9"/>
+    <circle cx="408" cy="84" r="5" fill="#FFFFFF"/>
+    <rect x="420" y="80" width="42" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.9"/>
+
+    <path d="M502 150 H512" stroke="#14B8A6" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M504 142 L514 150 L504 158" stroke="#14B8A6" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="520" y="76" width="76" height="148" rx="14" fill="#14B8A6" fill-opacity="0.12" stroke="#2DD4BF" stroke-opacity="0.7" stroke-width="2"/>
+    <rect x="534" y="98" width="48" height="16" rx="6" fill="#2DD4BF" fill-opacity="0.45"/>
+    <rect x="534" y="132" width="48" height="16" rx="6" fill="#2DD4BF" fill-opacity="0.45"/>
+    <rect x="534" y="166" width="48" height="16" rx="6" fill="#2DD4BF" fill-opacity="0.45"/>
+    <circle cx="578" cy="106" r="4" fill="#2DD4BF" fill-opacity="0.9"/>
+    <circle cx="578" cy="140" r="4" fill="#2DD4BF" fill-opacity="0.9"/>
+    <circle cx="578" cy="174" r="4" fill="#2DD4BF" fill-opacity="0.9"/>
+  </g>
+</svg>
