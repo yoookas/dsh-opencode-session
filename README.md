@@ -40,6 +40,14 @@ DeepSeek Harness 插件：**一个会话发出的模型请求，自动带上同�
 
 ## 安装
 
+从 GitHub Release 装（[最新发布](https://github.com/yoookas/dsh-opencode-session/releases)）：
+
+```sh
+dsh plugin --profile web add https://github.com/yoookas/dsh-opencode-session/releases/download/v1.1.0/dsh-opencode-session-1.1.0.tgz
+```
+
+或从本地目录装：
+
 ```sh
 dsh plugin --profile web add /path/to/dsh-x-opencode-session
 ```
@@ -53,6 +61,28 @@ dsh plugin --profile web add /path/to/dsh-x-opencode-session
 ```sh
 dsh plugin --profile web remove dsh-opencode-session
 ```
+
+## 发布
+
+仓库自带 [`.github/workflows/release.yml`](.github/workflows/release.yml)：**打版本号标签并推送**，就会自动跑测试、用 `npm pack` 打出插件包、连同 `SHA256SUMS.txt` 发布到 GitHub Release。
+
+```sh
+# 1) 先改 package.json 的 version（例如 1.1.1）并提交
+git add package.json && git commit -m "1.1.1" && git push
+
+# 2) 打标签并推送，触发发布
+git tag -a v1.1.1 -m "v1.1.1"
+git push origin v1.1.1
+```
+
+工作流的行为：
+
+- 校验标签去掉 `v` 后与 `package.json` 的 `version` **完全一致**，不一致直接失败（避免发错版本）；
+- 跑 `node --test test/*.test.js`；
+- `npm pack` 出 `dsh-opencode-session-<version>.tgz`，生成 `SHA256SUMS.txt`；
+- `gh release create` 发布，附件为上一步两个文件；标签里带 `-`（如 `v1.2.0-rc.1`）时自动标成 prerelease。
+
+权限用仓库自带的 `GITHUB_TOKEN`（工作流里 `permissions: contents: write`），不需要额外配置 secret。
 
 ## 设置页
 
